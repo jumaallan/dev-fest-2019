@@ -14,7 +14,7 @@
     </dist:module>
 
     <application>
-        <activity android:name=".MovieActivity"></activity>
+        <activity android:name=".ui.views.MovieActivity"></activity>
     </application>
 
 </manifest>

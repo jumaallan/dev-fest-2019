@@ -14,7 +14,7 @@
     </dist:module>
 
     <application>
-        <activity android:name=".NewsActivity"></activity>
+        <activity android:name=".ui.views.NewsActivity"></activity>
     </application>
 
 </manifest>

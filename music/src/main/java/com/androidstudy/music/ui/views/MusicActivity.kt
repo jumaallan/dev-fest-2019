@@ -1,12 +1,13 @@
-package com.androidstudy.weather
+package com.androidstudy.music.ui.views
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.androidstudy.music.R
 
-class WeatherrActivity : AppCompatActivity() {
+class MusicActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_weatherr)
+        setContentView(R.layout.activity_music)
     }
 }
