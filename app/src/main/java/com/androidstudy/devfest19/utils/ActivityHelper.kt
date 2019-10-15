@@ -42,7 +42,7 @@ object Activities {
     object MovieModule {
 
         object Movie : AddressableActivity {
-            override val className = "com.androidstudy.movie"
+            override val className = "com.androidstudy.movie.ui.views.MovieActivity"
         }
 
     }
@@ -53,7 +53,7 @@ object Activities {
     object MusicModule {
 
         object Music : AddressableActivity {
-            override val className = "com.androidstudy.music"
+            override val className = "com.androidstudy.musicui.views.MusicActivity"
         }
 
     }
@@ -64,7 +64,7 @@ object Activities {
     object NewsModule {
 
         object News : AddressableActivity {
-            override val className = "com.androidstudy.news"
+            override val className = "com.androidstudy.news.ui.views.NewsActivity"
         }
 
     }
@@ -75,7 +75,7 @@ object Activities {
     object WeatherModule {
 
         object Weather : AddressableActivity {
-            override val className = "com.androidstudy.weather"
+            override val className = "com.androidstudy.weather.ui.views.WeatherActivity"
         }
 
     }

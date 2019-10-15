@@ -1,11 +1,11 @@
 package com.androidstudy.devfest19
 
-import android.app.Application
 import androidx.annotation.Nullable
+import com.google.android.play.core.splitcompat.SplitCompatApplication
 import org.jetbrains.annotations.NotNull
 import timber.log.Timber
 
-class DevFest19 : Application() {
+class DevFest19 : SplitCompatApplication() {
 
     override fun onCreate() {
         super.onCreate()
