@@ -31,7 +31,6 @@
 
     <style name="dashBoardModuleName">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/lightBlue</item>
         <item name="android:fontFamily">@font/amaranth_bold</item>
         <item name="android:textAlignment">center</item>
     </style>
