@@ -29,3 +29,19 @@ This app uses the following technologies:
 
 The app only acts as a guide on how to use this components. You can refer to the relevant documentation from the official Android Documentation.
 
+
+### Modules
+
+This app has the following modules:
+
+> core - This is an Android Library, and contains the shared code across modules 
+
+> movies - show movies info
+
+> music - show music info
+
+> news - show news info
+
+> weather - show weather info
+
+Each module will be connected to an external public api, to pull random data.
