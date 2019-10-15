@@ -7,6 +7,7 @@ import com.androidstudy.devfest19.R
 import com.androidstudy.devfest19.ui.adapter.CustomItemClickListener
 import com.androidstudy.devfest19.ui.adapter.DynamicModuleRecyclerViewAdapter
 import com.androidstudy.devfest19.ui.model.DynamicModule
+import com.androidstudy.devfest19.utils.Constants
 import com.androidstudy.devfest19.utils.CustomGridLayoutManager
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -46,26 +47,26 @@ class MainActivity : AppCompatActivity() {
         val models = ArrayList<DynamicModule>()
         models.add(
             DynamicModule(
-                "Movies",
-                R.drawable.ic_launcher_background
+                Constants.MAIN_DASHBOARD_CARD_MOVIES,
+                R.drawable.ic_dashboard_movies
             )
         )
         models.add(
             DynamicModule(
-                "Music",
-                R.drawable.ic_launcher_background
+                Constants.MAIN_DASHBOARD_CARD_MUSIC,
+                R.drawable.ic_dashboard_music
             )
         )
         models.add(
             DynamicModule(
-                "News",
-                R.drawable.ic_launcher_background
+                Constants.MAIN_DASHBOARD_CARD_NEWS,
+                R.drawable.ic_dashboard_news
             )
         )
         models.add(
             DynamicModule(
-                "Weather",
-                R.drawable.ic_launcher_background
+                Constants.MAIN_DASHBOARD_CARD_WEATHER,
+                R.drawable.ic_dashboard_weather
             )
         )
         return models

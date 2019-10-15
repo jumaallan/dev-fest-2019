@@ -37,7 +37,7 @@
                 android:layout_marginTop="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:layout_marginBottom="@dimen/margin_small"
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/ic_devfest"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
