@@ -3,9 +3,12 @@
 package com.androidstudy.devfest19.utils
 
 import android.content.Intent
-import com.androidstudy.devfest19.utils.Constants.PACKAGE_NAME
 
-// Helpers to start activities in a modularized world.
+/**
+ * Helpers to start activities in a modularized world.
+ */
+
+private const val PACKAGE_NAME = "com.androidstudy.devfest19"
 
 
 /**
@@ -53,7 +56,7 @@ object Activities {
     object MusicModule {
 
         object Music : AddressableActivity {
-            override val className = "com.androidstudy.musicui.views.MusicActivity"
+            override val className = "com.androidstudy.music.ui.views.MusicActivity"
         }
 
     }

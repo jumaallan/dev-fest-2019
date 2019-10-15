@@ -3,8 +3,6 @@ package com.androidstudy.devfest19.utils
 
 object Constants {
 
-    const val PACKAGE_NAME = "com.androidstudy.devfest19"
-
     /**
      * Main Dashboard Modules
      */

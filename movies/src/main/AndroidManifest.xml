@@ -4,12 +4,10 @@
     package="com.androidstudy.movies">
 
     <dist:module
-        dist:instant="false"
         dist:title="@string/title_movies">
         <dist:delivery>
             <dist:on-demand />
         </dist:delivery>
-
         <dist:fusing dist:include="true" />
     </dist:module>
 
