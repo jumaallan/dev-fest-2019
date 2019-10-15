@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="dashboardTitle">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
 </resources>
