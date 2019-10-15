@@ -23,22 +23,21 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
+                android:fontFamily="@font/amaranth_bold"
                 android:lines="1"
                 android:text="@string/app_name"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 android:textColor="@color/white"
-                android:textSize="@dimen/material_text_headline"
-                app:fontFamily="@font/oxygen_bold" />
+                android:textSize="@dimen/material_text_headline" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imageViewTenantFlag"
                 android:layout_width="34dp"
                 android:layout_height="34dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:layout_marginBottom="@dimen/margin_small"
-                android:src="@drawable/flag_ke"
+                android:src="@mipmap/ic_launcher_round"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
