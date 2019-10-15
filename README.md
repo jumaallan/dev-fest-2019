@@ -5,11 +5,11 @@
 
 This goes without saying, much help from:
  
-* @wangerekaharun [Harun Wangereka](https://github.com/wangerekaharun), Android Developer @ Apps:Lab - help with many things along the way
+* :camel: @wangerekaharun [Harun Wangereka](https://github.com/wangerekaharun), Android Developer @ Apps:Lab - help with many things along the way
  
-* @JabezNzomo99 [Jabez Nzomo](https://github.com/JabezNzomo99), a student and an Android Maestro - helping with writing tests for this codebase.
+* :camel: @JabezNzomo99 [Jabez Nzomo](https://github.com/JabezNzomo99), a student and an Android Maestro - helping with writing tests for this codebase.
 
-The code is open for external contributions and PRs! 
+The code is open for external contributions and PRs! :rocket: 
 
 ### Background
 
