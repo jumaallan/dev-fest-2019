@@ -12,7 +12,7 @@
     </dist:module>
 
     <application>
-        <activity android:name=".ui.views.WeatherrActivity">
+        <activity android:name=".ui.views.WeatherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
