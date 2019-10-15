@@ -6,5 +6,6 @@
 
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="greyDim">#696969</color>
 
 </resources>

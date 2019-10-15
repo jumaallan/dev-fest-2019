@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">DevFest 19</string>
+
+    <!--   Modules-->
     <string name="title_music">music</string>
     <string name="title_weather">weather</string>
     <string name="title_news">news</string>
     <string name="title_movies">movies</string>
+
+    <!--Dashboard -->
+    <string name="welcome_devfest">Welcome to DevFest 19</string>
+    <string name="choose_an_option">Choose an Option</string>
 </resources>
