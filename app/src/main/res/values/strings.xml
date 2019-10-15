@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DevFest 19</string>
     <string name="title_music">music</string>
+    <string name="title_weather">weather</string>
 </resources>
