@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.androidstudy.weather">
@@ -8,7 +9,12 @@
         <dist:delivery>
             <dist:on-demand />
         </dist:delivery>
+
         <dist:fusing dist:include="true" />
     </dist:module>
-</manifest>
 
+    <application>
+        <activity android:name=".WeatherrActivity"></activity>
+    </application>
+
+</manifest>
