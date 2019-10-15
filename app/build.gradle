@@ -20,7 +20,7 @@ android {
         }
     }
 
-    dynamicFeatures = [":music", ":weather", ":news"]
+    dynamicFeatures = [":music", ":weather", ":news", ":movies"]
 
 }
 
