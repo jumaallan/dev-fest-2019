@@ -6,4 +6,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    // Logging - debug builds
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-2'
 }
