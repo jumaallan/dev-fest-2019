@@ -1,7 +1,8 @@
-package com.androidstudy.devfest19
+package com.androidstudy.devfest19.ui.views
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.androidstudy.devfest19.R
 
 class MainActivity : AppCompatActivity() {
 
