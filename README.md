@@ -5,6 +5,8 @@
 
 This goes without saying, much help from @wangerekaharun [Harun Wangereka](https://github.com/wangerekaharun), Android Developer @ Apps:Lab - help with many things along the way and @JabezNzomo99 [Jabez Nzomo](https://github.com/JabezNzomo99), a student and an Android Maestro - helping with writing tests for this codebase.
 
+The code is open for external contributions and PRs! 
+
 ### Background
 
 This is a basic app that shows how to use Dynamic App Modules, which allow you to separate certain features and resources from the base module of your app and include them in your App Bundle. 
