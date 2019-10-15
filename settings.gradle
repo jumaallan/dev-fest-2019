@@ -1,2 +1,2 @@
-include ':app', ':music', ':weather'
+include ':app', ':music', ':weather', ':news'
 rootProject.name='DevFest 19'
