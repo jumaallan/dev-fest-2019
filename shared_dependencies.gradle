@@ -11,4 +11,8 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.7.1'
     implementation 'com.facebook.stetho:stetho:1.5.1'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-2'
+
+    // Images
+    implementation 'io.coil-kt:coil:0.7.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
 }

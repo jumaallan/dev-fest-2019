@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_largest">32dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+
+    <dimen name="card_corner_radius">6dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+
+    <dimen name="default_corner_radius">6dp</dimen>
+
+    <dimen name="material_text_headline">20sp</dimen>
 </resources>
