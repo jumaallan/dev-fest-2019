@@ -2,6 +2,8 @@ apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+apply from: '../shared_dependencies.gradle'
+
 android {
     compileSdkVersion 29
 
