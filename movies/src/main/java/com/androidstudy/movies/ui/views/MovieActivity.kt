@@ -40,5 +40,4 @@ class MovieActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
-
 }

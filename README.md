@@ -53,3 +53,9 @@ This app has the following modules:
 > weather - show weather info
 
 Each module will be connected to an external public api, to pull random data.
+
+### Credits
+
+Just crediting various resources that helped shape up this project:
+
+* Icons - [icons8](https://icons8.com)
