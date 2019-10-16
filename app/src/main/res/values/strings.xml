@@ -10,4 +10,5 @@
     <!--Dashboard -->
     <string name="welcome_devfest">Welcome to DevFest 19</string>
     <string name="choose_an_option">Choose an Option</string>
+    <string name="menu_home">Home</string>
 </resources>
