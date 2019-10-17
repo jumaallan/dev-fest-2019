@@ -10,8 +10,8 @@ dependencies {
 
     // Android Jetpack
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
 
     // Networking
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
@@ -30,6 +30,6 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
     // DI
-    implementation 'org.koin:koin-android:2.0.0-beta-1'
-    implementation 'org.koin:koin-androidx-viewmodel:2.0.0-beta-1'
+    implementation 'org.koin:koin-android:2.0.1'
+    implementation 'org.koin:koin-androidx-viewmodel:2.0.1'
 }
