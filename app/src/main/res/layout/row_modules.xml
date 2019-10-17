@@ -28,7 +28,7 @@
             android:layout_height="54dp"
             android:layout_gravity="center"
             android:contentDescription="@string/app_name"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@sample/modules.json/data/drawableIcon" />
 
         <TextView
             android:id="@+id/textViewModule"
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_small"
-            tools:text="Module Name" />
+            tools:text="@sample/modules.json/data/name" />
 
     </LinearLayout>
 

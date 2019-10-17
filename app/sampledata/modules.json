@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "Movies",
+      "drawableIcon": "@drawable/ic_dashboard_movies"
+    },
+    {
+      "name": "Music",
+      "drawableIcon": "@drawable/ic_dashboard_music"
+    },
+    {
+      "name": "News",
+      "drawableIcon": "@drawable/ic_dashboard_news"
+    },
+    {
+      "name": "Weather",
+      "drawableIcon": "@drawable/ic_dashboard_weather"
+    }
+  ]
+}
