@@ -6,17 +6,14 @@ import com.androidstudy.movies.ui.views.datastates.NetworkResult
 import com.androidstudy.movies.ui.views.models.CharactersResponseModel
 import java.io.IOException
 
-interface CharactersRepo {
-    suspend fun getCharacters(): NetworkResult<CharactersResponseModel>
-}
+class CharactersRepo {
+    private val apiService = ApiClient().getClient().create(ApiService::class.java)
 
-class CharacterRepoImpl(private val apiService: ApiService) : CharactersRepo {
-    override suspend fun getCharacters(): NetworkResult<CharactersResponseModel> {
+    suspend fun getCharacters(): NetworkResult<CharactersResponseModel> {
         val response = apiService.getCharacters()
         return when {
             response.isSuccessful -> NetworkResult.Success(response.body()!!)
             else -> NetworkResult.Error(IOException("Could not get characters"))
         }
     }
-
 }

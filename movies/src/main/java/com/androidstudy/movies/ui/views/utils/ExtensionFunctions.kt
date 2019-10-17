@@ -27,3 +27,5 @@ suspend fun <T : Any> safeApiCall(
 }
 
 val <T> T.exhaustive: T get() = this
+
+

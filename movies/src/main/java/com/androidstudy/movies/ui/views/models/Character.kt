@@ -1,6 +1,6 @@
 package com.androidstudy.movies.ui.views.models
 
-data class Result(
+data class Character(
     val created: String,
     val episode: List<String>,
     val gender: String,

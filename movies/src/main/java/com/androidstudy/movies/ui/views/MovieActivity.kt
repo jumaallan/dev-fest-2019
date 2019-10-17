@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
 import com.androidstudy.devfest19.ui.views.MainActivity
 import com.androidstudy.movies.R
 import com.androidstudy.devfest19.R as devfest
@@ -14,6 +15,12 @@ class MovieActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie)
+
+        setupNavigation()
+    }
+
+    private fun setupNavigation() {
+       Navigation.findNavController(this, R.id.navHostFragment)
     }
 
     override fun onSupportNavigateUp(): Boolean {
