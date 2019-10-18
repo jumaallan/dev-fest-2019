@@ -16,7 +16,7 @@ import org.jetbrains.anko.toast
 import org.koin.androidx.viewmodel.ext.viewModel
 
 class CharactersFragment : Fragment(R.layout.fragment_characters) {
-    lateinit var sessionManager: SessionManager
+    private lateinit var sessionManager: SessionManager
     private val characterViewModel: CharacterViewModel by viewModel()
     private lateinit var adapter: CharactersAdapter
 
