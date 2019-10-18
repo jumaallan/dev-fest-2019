@@ -1,11 +1,14 @@
 package com.androidstudy.movies.di
 
+import androidx.room.Room
 import com.androidstudy.devfest19.BuildConfig
+import com.androidstudy.movies.data.Database
 import com.androidstudy.movies.data.repository.CharactersRepo
 import com.androidstudy.movies.ui.viewmodel.CharacterViewModel
 import com.androidstudy.movies.utils.Utils
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.loadKoinModules
 import org.koin.dsl.module
@@ -17,6 +20,7 @@ fun injectFeature() = loadFeature
 private val loadFeature by lazy {
     loadKoinModules(
         retrofit,
+        movieDatabase,
         characterRepository,
         characterViewModel
     )
@@ -47,6 +51,13 @@ val retrofit = module(override = true) {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
+    }
+}
+
+val movieDatabase = module {
+    single {
+        Room.databaseBuilder(androidContext(), Database::class.java, "devfest_movies")
+            .allowMainThreadQueries().build()
     }
 }
 
