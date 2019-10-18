@@ -39,43 +39,40 @@ class MainActivity : AppCompatActivity() {
         val adapter =
             DynamicModuleRecyclerViewAdapter(
                 prepareDynamicModules(),
-                this,
-                object : CustomItemClickListener {
-                    override fun onItemClick(v: View, position: Int) {
-                        val modules = prepareDynamicModules()[position]
-                        when (modules.dynamicModuleTitle) {
-                            Constants.MAIN_DASHBOARD_CARD_MOVIES -> {
-                                if (splitInstallManager.installedModules.contains(movieModule)) {
-                                    startActivity(intentTo(Activities.MovieModule.Movie))
-                                } else {
-                                    toast("Movie Module is not installed")
-                                }
-                            }
-                            Constants.MAIN_DASHBOARD_CARD_MUSIC -> {
-                                if (splitInstallManager.installedModules.contains(musicModule)) {
-                                    startActivity(intentTo(Activities.MusicModule.Music))
-                                } else {
-                                    toast("Music Module is not installed")
-                                }
-                            }
-                            Constants.MAIN_DASHBOARD_CARD_NEWS -> {
-                                if (splitInstallManager.installedModules.contains(newsModule)) {
-                                    startActivity(intentTo(Activities.NewsModule.News))
-                                } else {
-                                    toast("News Module is not installed")
-                                }
-                            }
-                            Constants.MAIN_DASHBOARD_CARD_WEATHER -> {
-                                if (splitInstallManager.installedModules.contains(weatherModule)) {
-                                    startActivity(intentTo(Activities.WeatherModule.Weather))
-                                } else {
-                                    toast("Weather Module is not installed")
-                                }
-                            }
+                this
+            ) { position ->
+                val modules = prepareDynamicModules()[position]
+                when (modules.dynamicModuleTitle) {
+                    Constants.MAIN_DASHBOARD_CARD_MOVIES -> {
+                        if (splitInstallManager.installedModules.contains(movieModule)) {
+                            startActivity(intentTo(Activities.MovieModule.Movie))
+                        } else {
+                            toast("Movie Module is not installed")
                         }
                     }
-                })
-
+                    Constants.MAIN_DASHBOARD_CARD_MUSIC -> {
+                        if (splitInstallManager.installedModules.contains(musicModule)) {
+                            startActivity(intentTo(Activities.MusicModule.Music))
+                        } else {
+                            toast("Music Module is not installed")
+                        }
+                    }
+                    Constants.MAIN_DASHBOARD_CARD_NEWS -> {
+                        if (splitInstallManager.installedModules.contains(newsModule)) {
+                            startActivity(intentTo(Activities.NewsModule.News))
+                        } else {
+                            toast("News Module is not installed")
+                        }
+                    }
+                    Constants.MAIN_DASHBOARD_CARD_WEATHER -> {
+                        if (splitInstallManager.installedModules.contains(weatherModule)) {
+                            startActivity(intentTo(Activities.WeatherModule.Weather))
+                        } else {
+                            toast("Weather Module is not installed")
+                        }
+                    }
+                }
+            }
         recyclerViewModules.adapter = adapter
 
     }

@@ -11,18 +11,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.androidstudy.devfest19.R
 import com.androidstudy.devfest19.ui.model.DynamicModule
 
+typealias ClickListener = (Int) -> Unit
+
 internal class DynamicModuleRecyclerViewAdapter(
     private val moduleModelList: List<DynamicModule>,
     private val context: Context,
-    internal var listener: CustomItemClickListener
+    val listener: ClickListener
 ) : RecyclerView.Adapter<DynamicModuleRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.row_modules, parent, false)
-        val mViewHolder = ViewHolder(view)
-        view.setOnClickListener { v -> listener.onItemClick(v, mViewHolder.position) }
-        return mViewHolder
+        return ViewHolder(view, listener)
     }
 
     override fun getItemCount(): Int {
@@ -30,14 +30,19 @@ internal class DynamicModuleRecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(moduleModelList[position], context)
+        holder.bind(moduleModelList[position], context, position)
     }
 
-    internal class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    internal class ViewHolder(itemView: View, private val clickListener: ClickListener) :
+        RecyclerView.ViewHolder(itemView) {
         private val image: ImageView = itemView.findViewById(R.id.imageViewModule)
         private val title: TextView = itemView.findViewById(R.id.textViewModule)
 
-        fun bind(moduleModel: DynamicModule, context: Context) {
+        fun bind(
+            moduleModel: DynamicModule,
+            context: Context,
+            position: Int
+        ) {
             image.setImageDrawable(
                 ContextCompat.getDrawable(
                     context,
@@ -45,6 +50,9 @@ internal class DynamicModuleRecyclerViewAdapter(
                 )
             )
             title.text = moduleModel.dynamicModuleTitle
+            itemView.setOnClickListener {
+                clickListener(position)
+            }
         }
     }
 }

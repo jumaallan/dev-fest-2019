@@ -22,6 +22,7 @@ private val loadFeature by lazy {
         retrofit,
         movieDatabase,
         movieDao,
+        charactersDao,
         characterRepository,
         characterViewModel
     )
@@ -57,6 +58,10 @@ val retrofit = module(override = true) {
 
 val movieDao = module {
     single { get<Database>().movieDao() }
+}
+
+val charactersDao = module {
+    single { get<Database>().charactersDao() }
 }
 
 val movieDatabase = module {

@@ -27,6 +27,5 @@ suspend fun <T : Any> safeApiCall(
     NetworkResult.Error(IOException(errorMessage, e))
 }
 
-val <T> T.exhaustive: T get() = this
 
 

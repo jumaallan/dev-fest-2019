@@ -8,7 +8,7 @@ import com.androidstudy.movies.data.model.Movie
 @Dao
 interface MovieDao : BaseDao<Movie> {
 
-    @Query("SELECT * FROM Movie")
-    fun fetchMovies(): DataSource.Factory<Int, Movie>
+//    @Query("SELECT * FROM Movie")
+//    suspend fun fetchMovies(): DataSource.Factory<Int, Movie>
 
 }

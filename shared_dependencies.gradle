@@ -15,6 +15,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
     implementation "org.jetbrains.anko:anko-common:0.10.4"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-beta01"
 
     // Networking
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
