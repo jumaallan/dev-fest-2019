@@ -1,12 +1,13 @@
-package com.androidstudy.movies.ui.views.utils
+package com.androidstudy.movies.utils
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
-import com.androidstudy.movies.ui.views.datastates.NetworkResult
+import com.androidstudy.movies.data.datastates.NetworkResult
 import java.io.IOException
 
 fun <T> LiveData<T>.nonNull(): NonNullMediatorLiveData<T> {
-    val mediator: NonNullMediatorLiveData<T> = NonNullMediatorLiveData()
+    val mediator: NonNullMediatorLiveData<T> =
+        NonNullMediatorLiveData()
     mediator.addSource(this) { it?.let { mediator.value = it } }
     return mediator
 }

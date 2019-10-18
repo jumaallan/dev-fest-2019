@@ -1,4 +1,4 @@
-package com.androidstudy.movies.ui.views
+package com.androidstudy.movies.ui.views.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import com.androidstudy.devfest19.ui.views.MainActivity
 import com.androidstudy.movies.R
+import com.androidstudy.movies.di.injectFeature
 import com.androidstudy.devfest19.R as devfest
 
 class MovieActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie)
 
+        injectFeature()
         setupNavigation()
     }
 

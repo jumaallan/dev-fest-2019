@@ -1,4 +1,4 @@
-package com.androidstudy.movies.ui.views.models
+package com.androidstudy.movies.data.models
 
 data class Info(
     val count: Int,

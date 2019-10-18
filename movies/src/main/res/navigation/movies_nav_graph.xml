@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/charactersFragment"
-        android:name="com.androidstudy.movies.ui.views.ui.characters.CharactersFragment"
+        android:name="com.androidstudy.movies.ui.views.fragments.characters.CharactersFragment"
         android:label="CharactersFragment"
         tools:layout="@layout/fragment_characters">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/characterDetailsFragment"
-        android:name="com.androidstudy.movies.ui.views.ui.characterdetails.CharacterDetailsFragment"
+        android:name="com.androidstudy.movies.ui.views.fragments.characterdetails.CharacterDetailsFragment"
         android:label="CharacterDetailsFragment"
         tools:layout="@layout/fragment_character_details"/>
 </navigation>
