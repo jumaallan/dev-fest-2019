@@ -3,6 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.views.WeatherActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.views.ui.views.activities.WeatherActivity">
+    <fragment
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/weather_nav_graph"
+        app:defaultNavHost="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

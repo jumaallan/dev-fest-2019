@@ -22,7 +22,7 @@ class MovieActivity : AppCompatActivity() {
     }
 
     private fun setupNavigation() {
-       Navigation.findNavController(this, R.id.navHostFragment)
+        Navigation.findNavController(this, R.id.navHostFragment)
     }
 
     override fun onSupportNavigateUp(): Boolean {

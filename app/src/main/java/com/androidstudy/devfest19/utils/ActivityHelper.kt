@@ -78,7 +78,7 @@ object Activities {
     object WeatherModule {
 
         object Weather : AddressableActivity {
-            override val className = "com.androidstudy.weather.ui.views.WeatherActivity"
+            override val className = "com.androidstudy.weather.ui.views.ui.views.activities.WeatherActivity"
         }
 
     }
