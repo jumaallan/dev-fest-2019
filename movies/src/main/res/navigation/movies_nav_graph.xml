@@ -18,5 +18,9 @@
         android:id="@+id/characterDetailsFragment"
         android:name="com.androidstudy.movies.ui.views.fragments.characterdetails.CharacterDetailsFragment"
         android:label="CharacterDetailsFragment"
-        tools:layout="@layout/fragment_character_details"/>
+        tools:layout="@layout/fragment_character_details">
+        <argument
+            android:name="character"
+            app:argType="com.androidstudy.movies.data.remote.Character" />
+    </fragment>
 </navigation>

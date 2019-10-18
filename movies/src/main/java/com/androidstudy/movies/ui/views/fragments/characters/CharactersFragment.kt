@@ -3,6 +3,8 @@ package com.androidstudy.movies.ui.views.fragments.characters
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.androidstudy.movies.R
 import com.androidstudy.movies.data.remote.Character
 import com.androidstudy.movies.ui.adapter.CharactersAdapter
@@ -25,8 +27,6 @@ class CharactersFragment : Fragment(R.layout.fragment_characters) {
 
         sessionManager = SessionManager(context!!)
 
-        activity?.toast(sessionManager.isFirstTime().toString())
-
         //check if its user's first time
         if (!sessionManager.isFirstTime()) {
             characterViewModel.getCharacters()
@@ -42,7 +42,12 @@ class CharactersFragment : Fragment(R.layout.fragment_characters) {
         layoutManager.setScrollEnabled(false)
         recyclerViewMovies.layoutManager = layoutManager
 
-        adapter = CharactersAdapter(emptyList()) {}
+        adapter = CharactersAdapter(emptyList()) {
+            val characterFragmentAction =
+                CharactersFragmentDirections.actionCharactersFragmentToCharacterDetailsFragment(it)
+            findNavController().navigate(characterFragmentAction)
+
+        }
 
 
     }
