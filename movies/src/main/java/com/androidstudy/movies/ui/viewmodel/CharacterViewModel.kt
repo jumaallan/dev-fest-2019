@@ -7,13 +7,16 @@ import com.androidstudy.movies.data.datastates.NetworkResult
 import com.androidstudy.movies.data.models.CharactersResponseModel
 import com.androidstudy.movies.data.repository.CharactersRepo
 import com.androidstudy.movies.utils.NonNullMediatorLiveData
+import kotlinx.coroutines.launch
 
-class CharacterViewModel : ViewModel() {
+class CharacterViewModel(
+    charactersRepo: CharactersRepo
+) : ViewModel() {
+
     private val characterMediatorLiveData =
         NonNullMediatorLiveData<CharactersResponseModel>()
     private val characterError = NonNullMediatorLiveData<String>()
-    private val charactersRepo = CharactersRepo()
-
+    private val repo = charactersRepo
 
     fun getCharactersResponse(): LiveData<CharactersResponseModel> = characterMediatorLiveData
 
@@ -21,7 +24,7 @@ class CharacterViewModel : ViewModel() {
 
     fun getCharacters() {
         viewModelScope.launch {
-            when (val value = charactersRepo.getCharacters()) {
+            when (val value = repo.getCharacters()) {
                 is NetworkResult.Success -> characterMediatorLiveData.postValue(value.data)
                 is NetworkResult.Error -> characterError.postValue(value.exception.message)
             }

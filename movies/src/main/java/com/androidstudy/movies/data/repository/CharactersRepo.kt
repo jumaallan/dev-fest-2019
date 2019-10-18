@@ -3,11 +3,15 @@ package com.androidstudy.movies.data.repository
 import com.androidstudy.movies.data.datastates.NetworkResult
 import com.androidstudy.movies.data.models.CharactersResponseModel
 import com.androidstudy.movies.data.network.ApiService
-import com.androidstudy.movies.ui.views.api.ApiClient
+import retrofit2.Retrofit
 import java.io.IOException
 
-class CharactersRepo {
-    private val apiService = ApiClient().getClient().create(ApiService::class.java)
+class CharactersRepo(
+    retrofit: Retrofit
+) {
+
+    private var network = retrofit
+    private val apiService = network.create(ApiService::class.java)
 
     suspend fun getCharacters(): NetworkResult<CharactersResponseModel> {
         val response = apiService.getCharacters()

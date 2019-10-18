@@ -1,9 +1,12 @@
 package com.androidstudy.movies.di
 
 import com.androidstudy.devfest19.BuildConfig
+import com.androidstudy.movies.data.repository.CharactersRepo
+import com.androidstudy.movies.ui.viewmodel.CharacterViewModel
 import com.androidstudy.movies.utils.Utils
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.loadKoinModules
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -46,3 +49,12 @@ val retrofit = module(override = true) {
             .build()
     }
 }
+
+val repository = module {
+    single { CharactersRepo(get()) }
+}
+
+val viewModel = module {
+    viewModel { CharacterViewModel(get()) }
+}
+
