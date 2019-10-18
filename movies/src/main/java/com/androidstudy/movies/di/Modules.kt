@@ -21,6 +21,7 @@ private val loadFeature by lazy {
     loadKoinModules(
         retrofit,
         movieDatabase,
+        movieDao,
         characterRepository,
         characterViewModel
     )
@@ -54,6 +55,10 @@ val retrofit = module(override = true) {
     }
 }
 
+val movieDao = module {
+    single { get<Database>().movieDao() }
+}
+
 val movieDatabase = module {
     single {
         Room.databaseBuilder(androidContext(), Database::class.java, "devfest_movies")
@@ -62,7 +67,7 @@ val movieDatabase = module {
 }
 
 val characterRepository = module {
-    single { CharactersRepo(get()) }
+    single { CharactersRepo(get(), get()) }
 }
 
 val characterViewModel = module {
