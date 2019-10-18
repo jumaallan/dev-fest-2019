@@ -1,6 +1,8 @@
 package com.androidstudy.devfest19
 
+import android.os.Build
 import androidx.annotation.Nullable
+import com.facebook.stetho.Stetho
 import com.google.android.play.core.splitcompat.SplitCompatApplication
 import org.jetbrains.annotations.NotNull
 import org.koin.android.ext.koin.androidContext
@@ -16,6 +18,7 @@ class DevFest19 : SplitCompatApplication() {
 
         initKoin()
         initTimber()
+        initStetho()
     }
 
     private fun initKoin() {
@@ -36,6 +39,16 @@ class DevFest19 : SplitCompatApplication() {
                 return super.createStackElementTag(element) + ":" + element.lineNumber
             }
         })
+    }
+
+    private fun initStetho() {
+        if (!isRoboUnitTest() && BuildConfig.DEBUG) {
+            Stetho.initializeWithDefaults(this)
+        }
+    }
+
+    private fun isRoboUnitTest(): Boolean {
+        return "robolectric" == Build.FINGERPRINT
     }
 
 }

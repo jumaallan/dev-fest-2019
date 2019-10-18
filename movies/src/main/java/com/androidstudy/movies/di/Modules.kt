@@ -57,7 +57,7 @@ val retrofit = module(override = true) {
 val movieDatabase = module {
     single {
         Room.databaseBuilder(androidContext(), Database::class.java, "devfest_movies")
-            .allowMainThreadQueries().build()
+            .build()
     }
 }
 
