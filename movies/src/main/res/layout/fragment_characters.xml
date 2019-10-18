@@ -12,8 +12,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewMovies"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/margin_small"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             tools:itemCount="8"
             tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:listitem="@layout/row_movie_item"

@@ -1,5 +1,6 @@
 package com.androidstudy.movies.ui.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,6 +44,7 @@ class CharactersAdapter(
         private val imageViewCharacterImage: ImageView = itemView.imageViewCharacterImage
         private val textViewCharacterName: TextView = itemView.textViewCharacterName
 
+        @SuppressLint("SetTextI18n")
         fun bindCharacter(character: Character) {
             with(character) {
                 textViewCharacterName.text = name

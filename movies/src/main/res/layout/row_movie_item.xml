@@ -10,13 +10,13 @@
     android:foreground="?android:attr/selectableItemBackground"
     app:cardElevation="3dp"
     card_view:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true"
     card_view:cardCornerRadius="@dimen/card_corner_radius">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/margin_medium"
         android:orientation="vertical"
         tools:ignore="UseCompoundDrawables">
 
@@ -34,8 +34,8 @@
             style="@style/dashBoardModuleName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_small"
-            tools:text="Character Name" />
+            android:layout_margin="@dimen/margin_small"
+            tools:text="Morty Smith" />
 
     </LinearLayout>
 
