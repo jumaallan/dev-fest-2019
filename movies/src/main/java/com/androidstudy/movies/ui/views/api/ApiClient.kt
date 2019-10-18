@@ -1,7 +1,7 @@
 package com.androidstudy.movies.ui.views.api
 
 import com.androidstudy.devfest19.BuildConfig
-import com.androidstudy.movies.ui.views.api.ApiEndpoints.BASE_URL
+import com.androidstudy.movies.utils.Utils.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

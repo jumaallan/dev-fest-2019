@@ -1,9 +1,9 @@
-package com.androidstudy.movies.ui.views.repository
+package com.androidstudy.movies.data.repository
 
+import com.androidstudy.movies.data.datastates.NetworkResult
+import com.androidstudy.movies.data.models.CharactersResponseModel
+import com.androidstudy.movies.data.network.ApiService
 import com.androidstudy.movies.ui.views.api.ApiClient
-import com.androidstudy.movies.ui.views.api.ApiService
-import com.androidstudy.movies.ui.views.datastates.NetworkResult
-import com.androidstudy.movies.ui.views.models.CharactersResponseModel
 import java.io.IOException
 
 class CharactersRepo {

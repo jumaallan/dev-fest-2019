@@ -1,4 +1,4 @@
-package com.androidstudy.movies.ui.views
+package com.androidstudy.movies.ui.views.activities
 
 import android.content.Intent
 import android.os.Bundle

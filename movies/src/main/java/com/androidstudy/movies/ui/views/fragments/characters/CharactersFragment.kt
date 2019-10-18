@@ -1,13 +1,15 @@
-package com.androidstudy.movies.ui.views.ui.characters
+package com.androidstudy.movies.ui.views.fragments.characters
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.androidstudy.movies.R
-import com.androidstudy.movies.ui.views.models.CharactersResponseModel
-import com.androidstudy.movies.ui.views.utils.nonNull
-import com.androidstudy.movies.ui.views.utils.observe
+import com.androidstudy.movies.data.models.CharactersResponseModel
+import com.androidstudy.movies.ui.adapter.CharactersAdapater
+import com.androidstudy.movies.ui.viewmodel.CharacterViewModel
+import com.androidstudy.movies.utils.nonNull
+import com.androidstudy.movies.utils.observe
 import kotlinx.android.synthetic.main.fragment_characters.*
 import org.jetbrains.anko.toast
 

@@ -1,16 +1,16 @@
-package com.androidstudy.movies.ui.views.ui.characters
+package com.androidstudy.movies.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.androidstudy.movies.ui.views.datastates.NetworkResult
-import com.androidstudy.movies.ui.views.models.CharactersResponseModel
-import com.androidstudy.movies.ui.views.repository.CharactersRepo
-import com.androidstudy.movies.ui.views.utils.NonNullMediatorLiveData
-import kotlinx.coroutines.launch
+import com.androidstudy.movies.data.datastates.NetworkResult
+import com.androidstudy.movies.data.models.CharactersResponseModel
+import com.androidstudy.movies.data.repository.CharactersRepo
+import com.androidstudy.movies.utils.NonNullMediatorLiveData
 
 class CharacterViewModel : ViewModel() {
-    private val characterMediatorLiveData = NonNullMediatorLiveData<CharactersResponseModel>()
+    private val characterMediatorLiveData =
+        NonNullMediatorLiveData<CharactersResponseModel>()
     private val characterError = NonNullMediatorLiveData<String>()
     private val charactersRepo = CharactersRepo()
 
