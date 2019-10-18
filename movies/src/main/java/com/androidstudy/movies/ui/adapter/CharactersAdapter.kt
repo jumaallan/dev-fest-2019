@@ -9,13 +9,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
 import com.androidstudy.movies.R
-import com.androidstudy.movies.data.remote.Character
+import com.androidstudy.movies.data.model.Movie
 import kotlinx.android.synthetic.main.row_movie_item.view.*
 
-typealias  ClickListener = (Character) -> Unit
+typealias  ClickListener = (Movie) -> Unit
 
 class CharactersAdapter(
-    private var charactersList: List<Character>,
+    private var charactersList: List<Movie>,
     private val clickListener: ClickListener
 ) :
     RecyclerView.Adapter<CharactersAdapter.CharactersViewHolder>() {
@@ -34,7 +34,7 @@ class CharactersAdapter(
         holder.bindCharacter(charactersList[position])
     }
 
-    fun updateList(characterList: List<Character>) {
+    fun updateList(characterList: List<Movie>) {
         charactersList = characterList
         notifyDataSetChanged()
     }
@@ -45,7 +45,7 @@ class CharactersAdapter(
         private val textViewCharacterName: TextView = itemView.textViewCharacterName
 
         @SuppressLint("SetTextI18n")
-        fun bindCharacter(character: Character) {
+        fun bindCharacter(character: Movie) {
             with(character) {
                 textViewCharacterName.text = name
                 imageViewCharacterImage.load(image)

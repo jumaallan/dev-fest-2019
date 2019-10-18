@@ -8,5 +8,5 @@ data class Movie(
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0,
     val name: String,
-    val url: String
+    val image: String
 )
