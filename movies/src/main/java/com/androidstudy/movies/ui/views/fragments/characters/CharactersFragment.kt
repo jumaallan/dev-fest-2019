@@ -31,7 +31,7 @@ class CharactersFragment : Fragment(R.layout.fragment_characters) {
         })
     }
 
-    private fun setUpViews(pagedList: List<Movie>?) {
+    private fun setUpViews(pagedList: List<Movie>) {
         if (pagedList.isNullOrEmpty()) {
 
         } else {
