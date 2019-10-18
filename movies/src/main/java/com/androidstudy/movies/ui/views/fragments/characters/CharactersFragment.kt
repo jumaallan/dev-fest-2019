@@ -11,7 +11,7 @@ import com.androidstudy.movies.utils.nonNull
 import com.androidstudy.movies.utils.observe
 import kotlinx.android.synthetic.main.fragment_characters.*
 import org.jetbrains.anko.toast
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.viewModel
 
 class CharactersFragment : Fragment(R.layout.fragment_characters) {
 
