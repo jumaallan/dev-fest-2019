@@ -45,7 +45,7 @@ object Activities {
     object MovieModule {
 
         object Movie : AddressableActivity {
-            override val className = "com.androidstudy.movies.ui.views.activities"
+            override val className = "com.androidstudy.movies.ui.views.activities.MovieActivity"
         }
 
     }
