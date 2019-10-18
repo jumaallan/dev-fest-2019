@@ -15,14 +15,14 @@ import retrofit2.converter.gson.GsonConverterFactory
 fun injectFeature() = loadFeature
 
 private val loadFeature by lazy {
-
     loadKoinModules(
-        retrofit
+        retrofit,
+        characterRepository,
+        characterViewModel
     )
 }
 
 val retrofit = module(override = true) {
-
     single {
 
         val interceptor = HttpLoggingInterceptor()
@@ -50,11 +50,11 @@ val retrofit = module(override = true) {
     }
 }
 
-val repository = module {
+val characterRepository = module {
     single { CharactersRepo(get()) }
 }
 
-val viewModel = module {
+val characterViewModel = module {
     viewModel { CharacterViewModel(get()) }
 }
 
