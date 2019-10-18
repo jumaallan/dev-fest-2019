@@ -31,13 +31,15 @@ This app uses the following technologies:
 
 > KOIN - Dependency Injection
 
-> Dynamic App Bundles
+> Dynamic App Modules
 
 > App Bundles 
 
 > Firebase - Performance, Crashlytics, Analytics
 
-The app only acts as a guide on how to use this components. You can refer to the relevant documentation from the official Android Documentation.
+The app only acts as a guide on how to use this components. You can refer to the relevant documentation from the official Android Documentation. 
+
+We will try to keep this repo up to date, as newer technologies come up, until we retire it during the DevFest20.
 
 
 ### Modules
