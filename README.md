@@ -9,6 +9,8 @@ This goes without saying, much help from:
  
 * :camel: @JabezNzomo99 [Jabez Nzomo](https://github.com/JabezNzomo99), a student and an Android Maestro - helping with writing tests for this codebase.
 
+* :camel: @etonotieno [Eton Otieno](https://github.com/etonotieno), a self taughtdev and an Kotlin Ninja - help with writing the code base - open for job offers.
+
 The code is open for external contributions and PRs! :rocket: 
 
 ### Background
