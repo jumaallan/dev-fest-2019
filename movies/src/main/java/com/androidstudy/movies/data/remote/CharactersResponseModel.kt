@@ -1,4 +1,4 @@
-package com.androidstudy.movies.data.models
+package com.androidstudy.movies.data.remote
 
 data class CharactersResponseModel(
     val info: Info,

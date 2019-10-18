@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.androidstudy.movies.R
-import com.androidstudy.movies.data.models.CharactersResponseModel
+import com.androidstudy.movies.data.remote.CharactersResponseModel
 import com.androidstudy.movies.ui.adapter.CharactersAdapter
 import com.androidstudy.movies.ui.viewmodel.CharacterViewModel
 import com.androidstudy.movies.utils.CustomGridLayoutManager

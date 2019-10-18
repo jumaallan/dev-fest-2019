@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.androidstudy.movies.data.datastates.NetworkResult
-import com.androidstudy.movies.data.models.CharactersResponseModel
+import com.androidstudy.movies.data.remote.CharactersResponseModel
 import com.androidstudy.movies.data.repository.CharactersRepo
 import com.androidstudy.movies.utils.NonNullMediatorLiveData
 import kotlinx.coroutines.launch

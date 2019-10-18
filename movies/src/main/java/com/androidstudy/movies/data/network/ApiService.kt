@@ -1,6 +1,6 @@
 package com.androidstudy.movies.data.network
 
-import com.androidstudy.movies.data.models.CharactersResponseModel
+import com.androidstudy.movies.data.remote.CharactersResponseModel
 import retrofit2.Response
 import retrofit2.http.GET
 

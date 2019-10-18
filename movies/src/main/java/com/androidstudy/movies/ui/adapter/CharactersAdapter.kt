@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
 import com.androidstudy.movies.R
-import com.androidstudy.movies.data.models.Character
+import com.androidstudy.movies.data.remote.Character
 import kotlinx.android.synthetic.main.row_movie_item.view.*
 
 typealias  ClickListener = (Character) -> Unit

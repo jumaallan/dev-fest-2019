@@ -1,8 +1,8 @@
 package com.androidstudy.movies.data.repository
 
 import com.androidstudy.movies.data.datastates.NetworkResult
-import com.androidstudy.movies.data.models.CharactersResponseModel
 import com.androidstudy.movies.data.network.ApiService
+import com.androidstudy.movies.data.remote.CharactersResponseModel
 import retrofit2.Retrofit
 import java.io.IOException
 
