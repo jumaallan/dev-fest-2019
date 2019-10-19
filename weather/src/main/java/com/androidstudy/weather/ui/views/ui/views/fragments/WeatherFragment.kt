@@ -49,6 +49,9 @@ class WeatherFragment : Fragment(R.layout.fragment_weather) {
     private fun setupViews(weatherResponseModel: WeatherResponseModel) {
         address.text = "${weatherResponseModel.name},${weatherResponseModel.sys.country}"
         status.text = weatherResponseModel.weather[0].description
+        updated_at.text = "Updated at : ${weatherResponseModel.dt.toDate("dd/MM/yyyy hh:mm a")}"
+        sunset.text = weatherResponseModel.sys.sunrise.toDate("hh:mm a")
+        sunset.text = weatherResponseModel.sys.sunset.toDate("hh:mm a")
         temp.text = "${weatherResponseModel.main.temp} °C"
         temp_min.text = "Min Temp: ${weatherResponseModel.main.temp_min}°C"
         temp_max.text = "Max Temp: ${weatherResponseModel.main.temp_max}°C"

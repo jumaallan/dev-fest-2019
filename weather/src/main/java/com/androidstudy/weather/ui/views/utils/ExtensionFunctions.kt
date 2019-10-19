@@ -30,7 +30,14 @@ suspend fun <T : Any> safeApiCall(
 
 val <T> T.exhaustive: T get() = this
 
-fun Int.toDate(): Date {
-    val formatter = SimpleDateFormat("dd/MM/yyyy hh:mm a")
-    return formatter.parse(this.toString())
+fun Long.toDate(pattern: String): String {
+    val date = Date(this * 1000)
+    val formatter = SimpleDateFormat(pattern)
+    return formatter.format(date)
+}
+
+fun Int.toDate(pattern: String): String {
+    val date = Date((this * 1000).toLong())
+    val formatter = SimpleDateFormat(pattern)
+    return formatter.format(date)
 }
