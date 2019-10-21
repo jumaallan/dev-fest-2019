@@ -47,8 +47,7 @@ val retrofit = module(override = true) {
                 chain.proceed(request)
             }.addInterceptor(interceptor).build()
 
-        Retrofit
-            .Builder()
+        Retrofit.Builder()
             .baseUrl(Utils.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)

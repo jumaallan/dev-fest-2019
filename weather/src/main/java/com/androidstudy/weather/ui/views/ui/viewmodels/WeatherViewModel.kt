@@ -3,10 +3,10 @@ package com.androidstudy.weather.ui.views.ui.viewmodels
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.androidstudy.weather.ui.views.datastates.NetworkResult
+import com.androidstudy.devfest19.core.api.NetworkResult
+import com.androidstudy.devfest19.core.livedata.NonNullMediatorLiveData
 import com.androidstudy.weather.ui.views.models.WeatherResponseModel
 import com.androidstudy.weather.ui.views.repository.WeatherRepo
-import com.androidstudy.weather.ui.views.utils.NonNullMediatorLiveData
 import kotlinx.coroutines.launch
 
 class WeatherViewModel : ViewModel() {

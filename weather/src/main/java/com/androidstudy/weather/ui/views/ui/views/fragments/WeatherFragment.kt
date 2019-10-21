@@ -1,21 +1,17 @@
 package com.androidstudy.weather.ui.views.ui.views.fragments
 
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import com.androidstudy.weather.BuildConfig
+import com.androidstudy.devfest19.core.livedata.nonNull
+import com.androidstudy.devfest19.core.livedata.observe
 import com.androidstudy.weather.R
 import com.androidstudy.weather.ui.views.models.WeatherResponseModel
 import com.androidstudy.weather.ui.views.ui.viewmodels.WeatherViewModel
-import com.androidstudy.weather.ui.views.utils.nonNull
-import com.androidstudy.weather.ui.views.utils.observe
 import com.androidstudy.weather.ui.views.utils.toDate
 import kotlinx.android.synthetic.main.fragment_weather.*
 import org.jetbrains.anko.toast
-import java.text.SimpleDateFormat
-import java.util.*
 
 class WeatherFragment : Fragment(R.layout.fragment_weather) {
     private val weatherViewModel by lazy {

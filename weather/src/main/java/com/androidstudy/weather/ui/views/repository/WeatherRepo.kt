@@ -1,10 +1,10 @@
 package com.androidstudy.weather.ui.views.repository
 
+import com.androidstudy.devfest19.core.api.NetworkResult
+import com.androidstudy.devfest19.core.api.safeApiCall
 import com.androidstudy.weather.ui.views.api.ApiClient
 import com.androidstudy.weather.ui.views.api.ApiService
-import com.androidstudy.weather.ui.views.datastates.NetworkResult
 import com.androidstudy.weather.ui.views.models.WeatherResponseModel
-import com.androidstudy.weather.ui.views.utils.safeApiCall
 import java.io.IOException
 
 class WeatherRepo {
