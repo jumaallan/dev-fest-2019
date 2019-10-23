@@ -1,10 +1,7 @@
 package com.androidstudy.devfest19.utils
 
 
-object Constants {
-
-    // Base URLs
-    const val MOVIES_BASE_URL = "https://rickandmortyapi.com/api/"
+internal object Constants {
 
     // Main Dashboard Modules
     const val MAIN_DASHBOARD_CARD_MOVIES = "Movies"

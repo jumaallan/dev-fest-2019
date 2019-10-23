@@ -1,9 +1,8 @@
-package com.androidstudy.movies.utils
+package com.androidstudy.devfest19.core.livedata
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
-import com.androidstudy.movies.data.datastates.NetworkResult
-import java.io.IOException
+import androidx.lifecycle.observe
 
 fun <T> LiveData<T>.nonNull(): NonNullMediatorLiveData<T> {
     val mediator: NonNullMediatorLiveData<T> =
@@ -13,18 +12,9 @@ fun <T> LiveData<T>.nonNull(): NonNullMediatorLiveData<T> {
 }
 
 fun <T> NonNullMediatorLiveData<T>.observe(owner: LifecycleOwner, observer: (t: T) -> Unit) {
-    this.observe(owner, androidx.lifecycle.Observer {
+    observe(owner) {
         it?.let(observer)
-    })
-}
-
-suspend fun <T : Any> safeApiCall(
-    call: suspend () -> NetworkResult<T>,
-    errorMessage: String
-): NetworkResult<T> = try {
-    call.invoke()
-} catch (e: Exception) {
-    NetworkResult.Error(IOException(errorMessage, e))
+    }
 }
 
 

@@ -1,4 +1,4 @@
-package com.androidstudy.movies.utils
+package com.androidstudy.devfest19.core.livedata
 
 import androidx.lifecycle.MediatorLiveData
 

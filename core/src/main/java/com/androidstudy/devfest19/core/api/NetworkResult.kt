@@ -1,4 +1,4 @@
-package com.androidstudy.weather.ui.views.datastates
+package com.androidstudy.devfest19.core.api
 
 sealed class NetworkResult<out T : Any> {
     data class Success<out T : Any>(val data: T) : NetworkResult<T>()

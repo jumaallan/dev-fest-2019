@@ -3,11 +3,11 @@ package com.androidstudy.movies.ui.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.androidstudy.movies.data.datastates.NetworkResult
+import com.androidstudy.devfest19.core.api.NetworkResult
+import com.androidstudy.devfest19.core.livedata.NonNullMediatorLiveData
 import com.androidstudy.movies.data.remote.Character
 import com.androidstudy.movies.data.remote.CharactersResponseModel
 import com.androidstudy.movies.data.repository.CharactersRepo
-import com.androidstudy.movies.utils.NonNullMediatorLiveData
 import kotlinx.coroutines.launch
 
 class CharacterViewModel(
@@ -17,7 +17,6 @@ class CharacterViewModel(
     private val repo = charactersRepo
     private val charactersMediatorLiveData = NonNullMediatorLiveData<CharactersResponseModel>()
     private val charactersError = NonNullMediatorLiveData<String>()
-
 
     fun fetchLocalCharacters(): LiveData<List<Character>> {
         return repo.fetchLocalCharacters()

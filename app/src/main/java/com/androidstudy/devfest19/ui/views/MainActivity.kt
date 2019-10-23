@@ -1,13 +1,15 @@
 package com.androidstudy.devfest19.ui.views
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.androidstudy.devfest19.R
-import com.androidstudy.devfest19.ui.adapter.CustomItemClickListener
+import com.androidstudy.devfest19.core.toast
 import com.androidstudy.devfest19.ui.adapter.DynamicModuleRecyclerViewAdapter
 import com.androidstudy.devfest19.ui.model.DynamicModule
-import com.androidstudy.devfest19.utils.*
+import com.androidstudy.devfest19.utils.Activities
+import com.androidstudy.devfest19.utils.Constants
+import com.androidstudy.devfest19.utils.CustomGridLayoutManager
+import com.androidstudy.devfest19.utils.intentTo
 import com.google.android.play.core.splitinstall.SplitInstallManager
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
 import kotlinx.android.synthetic.main.content_main.*

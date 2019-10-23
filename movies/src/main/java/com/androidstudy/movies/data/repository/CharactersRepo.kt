@@ -2,12 +2,12 @@ package com.androidstudy.movies.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
+import com.androidstudy.devfest19.core.api.NetworkResult
+import com.androidstudy.devfest19.core.api.safeApiCall
 import com.androidstudy.movies.data.dao.CharactersDao
-import com.androidstudy.movies.data.datastates.NetworkResult
 import com.androidstudy.movies.data.network.ApiService
 import com.androidstudy.movies.data.remote.Character
 import com.androidstudy.movies.data.remote.CharactersResponseModel
-import com.androidstudy.movies.utils.safeApiCall
 import retrofit2.Retrofit
 import java.io.IOException
 
