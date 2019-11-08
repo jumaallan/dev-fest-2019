@@ -6,9 +6,13 @@ import okhttp3.Response
 class AuthInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         var chainRequest = chain.request()
-        val url =
-            chainRequest.url.newBuilder().addQueryParameter("Authorization", "your_key").build()
-        chainRequest = chainRequest.newBuilder().url(url).build()
+        chainRequest = if (chainRequest.headers.names().contains("No-Auth")) {
+            chainRequest.newBuilder().removeHeader("No-Auth").build()
+        } else {
+            chainRequest.newBuilder()
+                .addHeader("Authorization", "Bearer " + "your_token")
+                .build()
+        }
         return chain.proceed(chainRequest)
     }
 }
